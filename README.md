@@ -1,4 +1,4 @@
-# with-prisma-nextauth-typescript
+# with-prisma-mongodb-nextauth
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) and the `with-prisma-nextauth-typescript` template.
 
@@ -11,7 +11,7 @@ yarn create next-app --example https://github.com/krushilnaik/with-prisma-nextau
 ```
 
 ## Table of Contents
-- [with-prisma-nextauth-typescript](#with-prisma-nextauth-typescript)
+- [with-prisma-mongodb-nextauth](#with-prisma-mongodb-nextauth)
 	- [Table of Contents](#table-of-contents)
 	- [What's included (besides, obviously, Next.js)](#whats-included-besides-obviously-nextjs)
 	- [Getting Started](#getting-started)
@@ -22,7 +22,7 @@ yarn create next-app --example https://github.com/krushilnaik/with-prisma-nextau
 
 - [Prisma ORM](https://www.prisma.io/)
 - [NextAuth](https://next-auth.js.org/)
-- [TypeScript](https://www.typescriptlang.org/)
+- [MongoDB](https://www.mongodb.com/)
 
 The Prisma adapter for NextAuth and all the essential types/schemas are pre-configured. The boilerplate for Google, Apple, and GitHub login is also there, but you can obviously delete and add stuff as needed.t
 
