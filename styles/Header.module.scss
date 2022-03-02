@@ -1,0 +1,20 @@
+.header {
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: center;
+	height: 4em;
+	padding: 0 24px;
+
+	button {
+		font-weight: bold;
+		cursor: pointer;
+		font-size: 24px;
+		color: tomato;
+		background-color: transparent;
+		border: none;
+
+		&:hover {
+			color: blueviolet;
+		}
+	}
+}

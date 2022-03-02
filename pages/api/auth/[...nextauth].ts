@@ -27,11 +27,17 @@ export default NextAuth({
 	// 	signIn: "/auth/sign_in",
 	// },
 	callbacks: {
-		async session({ session, token }) {
-			return {
+		async session({ session, user }) {
+			return Promise.resolve({
 				...session,
-				user: { ...session.user, id: token.sub },
-			};
+				user: {
+					...session.user,
+					id: user.id,
+				},
+			});
+		},
+		async redirect({ baseUrl }) {
+			return baseUrl;
 		},
 	},
 });

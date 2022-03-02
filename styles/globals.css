@@ -12,15 +12,12 @@ a {
 
 /* placeholder styles */
 
-.App {
+#__next {
 	display: grid;
-	place-content: center;
 
 	width: 100vw;
 	height: 100vh;
 
-	font-size: 96px;
-	font-weight: bold;
 	color: honeydew;
 
 	background-color: #222244;
