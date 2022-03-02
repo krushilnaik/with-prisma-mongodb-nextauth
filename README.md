@@ -6,7 +6,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 - [NextAuth](https://next-auth.js.org/)
 - [TypeScript](https://www.typescriptlang.org/)
 
-The Prisma adapter for NextAuth and all the essential types/schemas are pre-configured. The boilerplate for Google and GitHub login is also there, but you can obviously delete and add stuff as needed.
+The Prisma adapter for NextAuth and all the essential types/schemas are pre-configured. The boilerplate for Google, Apple, and GitHub login is also there, but you can obviously delete and add stuff as needed.
 
 If you your project won't need authentication, just delete `pages/api/auth/*`, `pages/auth/*`, and `graphql/types/User.ts` then get rid of the User, Account, and Session models from `prisma/schema.prisma`.
 
