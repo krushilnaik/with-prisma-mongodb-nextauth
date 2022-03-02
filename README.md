@@ -2,6 +2,14 @@
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) and the `with-prisma-nextauth-typescript` template.
 
+To use the template, run:
+
+```bash
+npx create-next-app --example https://github.com/krushilnaik/with-prisma-nextauth-typescript/ my-app
+# or
+yarn create next-app --example https://github.com/krushilnaik/with-prisma-nextauth-typescript/ my-app
+```
+
 ## Table of Contents
 - [with-prisma-nextauth-typescript](#with-prisma-nextauth-typescript)
 	- [Table of Contents](#table-of-contents)
@@ -18,7 +26,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 The Prisma adapter for NextAuth and all the essential types/schemas are pre-configured. The boilerplate for Google, Apple, and GitHub login is also there, but you can obviously delete and add stuff as needed.
 
-If you your project won't need authentication, just delete `pages/api/auth/*`, `pages/auth/*`, and `graphql/types/User.ts` then get rid of the User, Account, and Session models from `prisma/schema.prisma`.
+If you don't need authentication, just delete `pages/api/auth/*`, `pages/auth/*`, and `graphql/types/User.ts` then get rid of the User, Account, and Session models from `prisma/schema.prisma`.
 
 Aside from what's on the label, this template comes pre-packaged with:
 
