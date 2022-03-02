@@ -24,15 +24,14 @@ yarn create next-app --example https://github.com/krushilnaik/with-prisma-nextau
 - [NextAuth](https://next-auth.js.org/)
 - [TypeScript](https://www.typescriptlang.org/)
 
-The Prisma adapter for NextAuth and all the essential types/schemas are pre-configured. The boilerplate for Google, Apple, and GitHub login is also there, but you can obviously delete and add stuff as needed.
+The Prisma adapter for NextAuth and all the essential types/schemas are pre-configured. The boilerplate for Google, Apple, and GitHub login is also there, but you can obviously delete and add stuff as needed.t
 
 If you don't need authentication, just delete `pages/api/auth/*`, `pages/auth/*`, and `graphql/types/User.ts` then get rid of the User, Account, and Session models from `prisma/schema.prisma`.
 
 Aside from what's on the label, this template comes pre-packaged with:
-
-- MongoDB
-- GraphQL (with Nexus and Apollo)
-- SCSS
+- [TypeScript](https://www.typescriptlang.org/)
+- [GraphQL](https://graphql.org/) (with [Nexus](https://nexusjs.org/) and [Apollo](https://www.apollographql.com/))
+- [SCSS](https://sass-lang.com/)
 
 ## Getting Started
 
