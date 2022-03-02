@@ -7,12 +7,12 @@ import "@styles/globals.css";
 
 function MyApp({ Component, pageProps: { session, ...pageProps } }) {
 	return (
-		<ApolloProvider client={client}>
-			<SessionProvider session={session}>
+		<SessionProvider session={session}>
+			<ApolloProvider client={client}>
 				<Header />
 				<Component {...pageProps} />
-			</SessionProvider>
-		</ApolloProvider>
+			</ApolloProvider>
+		</SessionProvider>
 	);
 }
 
