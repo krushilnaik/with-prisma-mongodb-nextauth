@@ -2,6 +2,14 @@
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) and the `with-prisma-nextauth-typescript` template.
 
+To use the template, run:
+
+```bash
+npx create-next-app --example https://github.com/krushilnaik/with-prisma-nextauth-typescript/ my-app
+# or
+yarn create next-app --example https://github.com/krushilnaik/with-prisma-nextauth-typescript/ my-app
+```
+
 ## Table of Contents
 - [with-prisma-nextauth-typescript](#with-prisma-nextauth-typescript)
 	- [Table of Contents](#table-of-contents)
