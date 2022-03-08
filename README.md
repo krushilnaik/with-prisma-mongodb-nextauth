@@ -1,6 +1,6 @@
 # with-prisma-mongodb-nextauth
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) and the `with-prisma-nextauth-typescript` template.
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) and the `with-prisma-mongodb-nextauth` template.
 
 To use the template, run:
 
@@ -31,7 +31,7 @@ If you don't need authentication, just delete `pages/api/auth/*`, `pages/auth/*`
 Aside from what's on the label, this template comes pre-packaged with:
 - [TypeScript](https://www.typescriptlang.org/)
 - [GraphQL](https://graphql.org/) (with [Nexus](https://nexusjs.org/) and [Apollo](https://www.apollographql.com/))
-- [SCSS](https://sass-lang.com/)
+- [SCSS](https://sass-lang.com/) support
 
 ## Getting Started
 
