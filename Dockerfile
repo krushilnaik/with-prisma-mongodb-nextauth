@@ -1,36 +1,13 @@
-FROM mongo as base
+FROM node:16-alpine
 
-COPY ./init-mongodbs.sh ./init-replica.sh ./entry-point.sh /
+WORKDIR /app
 
-RUN chmod +x /init-mongodbs.sh && \
-    chmod +x /init-replica.sh && \
-    chmod +x /entry-point.sh
+COPY package.json .
 
-# Data directory
-ARG DB1_DATA_DIR=/var/lib/mongo1
-ARG DB2_DATA_DIR=/var/lib/mongo2
-ARG DB3_DATA_DIR=/var/lib/mongo3
+RUN npm install
 
-# Log directory
-ARG DB1_LOG_DIR=/var/log/mongodb1
-ARG DB2_LOG_DIR=/var/log/mongodb2
-ARG DB3_LOG_DIR=/var/log/mongodb3
+EXPOSE 3000
 
-RUN mkdir -p ${DB1_DATA_DIR} && \
-    mkdir -p ${DB1_LOG_DIR} && \
-    mkdir -p ${DB2_DATA_DIR} && \
-    mkdir -p ${DB2_LOG_DIR} && \
-    mkdir -p ${DB3_DATA_DIR} && \
-    mkdir -p ${DB3_LOG_DIR} && \
-    chown `whoami` ${DB1_DATA_DIR} && \
-    chown `whoami` ${DB1_LOG_DIR} && \
-    chown `whoami` ${DB2_DATA_DIR} && \
-    chown `whoami` ${DB2_LOG_DIR} && \
-    chown `whoami` ${DB3_DATA_DIR} && \
-    chown `whoami` ${DB3_LOG_DIR}
+COPY . .
 
-EXPOSE 27017
-EXPOSE 27018
-EXPOSE 27019
-
-ENTRYPOINT [ "bash", "entry-point.sh" ]
+CMD [ "npm", "run", "dev" ]

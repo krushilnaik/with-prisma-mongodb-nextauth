@@ -1,6 +1,15 @@
+version: "3.8"
+
 services:
-  mongodb:
+  frontend:
     build: .
+    container_name: application
+    ports:
+      - 3000:3000
+    volumes:
+      - ./:/app
+  database:
+    build: ./docker/database
     container_name: mongodb
     ports:
       - 27017:27017
