@@ -8,6 +8,7 @@ services:
       - 3000:3000
     volumes:
       - ./:/app
+      - /app/node_modules
   database:
     build: ./docker/database
     container_name: mongodb
