@@ -6,12 +6,16 @@ services:
     container_name: application
     ports:
       - 3000:3000
+      - 5555:5555
     volumes:
       - ./:/app
       - /app/node_modules
+    user: node
+    links:
+      - database
   database:
     build: ./docker/database
-    container_name: mongodb
+    container_name: database
     ports:
       - 27017:27017
       - 27018:27018

@@ -4,9 +4,11 @@ WORKDIR /app
 
 COPY package.json .
 
+COPY prisma ./prisma
+
 RUN npm install
 
-EXPOSE 3000
+EXPOSE 3000 5555
 
 COPY . .
 
