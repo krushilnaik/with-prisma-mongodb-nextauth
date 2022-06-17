@@ -23,6 +23,7 @@ yarn create next-app --example https://github.com/krushilnaik/with-prisma-nextau
 - [Prisma ORM](https://www.prisma.io/)
 - [NextAuth](https://next-auth.js.org/)
 - [MongoDB](https://www.mongodb.com/)
+- [TypeScript](https://www.typescriptlang.org/)
 
 The Prisma adapter for NextAuth and all the essential types/schemas are pre-configured. The boilerplate for Google, Apple, and GitHub login is also there, but you can obviously delete and add stuff as needed.
 
