@@ -24,7 +24,7 @@ yarn create next-app --example https://github.com/krushilnaik/with-prisma-nextau
 - [NextAuth](https://next-auth.js.org/)
 - [MongoDB](https://www.mongodb.com/)
 
-The Prisma adapter for NextAuth and all the essential types/schemas are pre-configured. The boilerplate for Google, Apple, and GitHub login is also there, but you can obviously delete and add stuff as needed.t
+The Prisma adapter for NextAuth and all the essential types/schemas are pre-configured. The boilerplate for Google, Apple, and GitHub login is also there, but you can obviously delete and add stuff as needed.
 
 If you don't need authentication, just delete `pages/api/auth/*`, `pages/auth/*`, and `graphql/types/User.ts` then get rid of the User, Account, and Session models from `prisma/schema.prisma`.
 
